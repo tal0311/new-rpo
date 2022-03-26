@@ -1,0 +1,61 @@
+.board-list{
+    
+    position:absolute;
+    left:66px;
+    background-color: $clr4;
+    // width: 30px;
+    
+    animation-duration: 0.1s;
+    animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
+    animation-delay: 0s;
+    
+    .title-box-container{
+        margin: 12px 16px 18px 16px;
+        .title-container{
+
+            > h1 {
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: $clr5;
+    
+            }
+            .elipsis {
+                &:before {
+                    content: "\f311";
+                }
+            }
+        } 
+        .ws-name{
+            border: 1px solid $clr5;
+            padding: 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            > .ws-icon {
+                background-color: pink;
+                border-radius: 8px;
+                padding: 5px 10px;
+                
+            }
+        }
+
+        .menu-buttons{
+            > button > svg > span {
+                margin: 0 8px;
+                font-size: 0.875rem;
+            }
+            + .bl-btn{
+                border: 1px solid black;
+                &:hover{
+                    background-color: $clr7;
+                }
+            }
+        }
+
+
+    }
+
+
+    &.is-expanded{
+        width:255px;
+    }
+}
